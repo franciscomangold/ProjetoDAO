@@ -1,0 +1,38 @@
+DAO - Data acses
+A idéia é ter uma classe especifica para o que estiver manipulando, e outra classe para realizar 
+a intermediação ao banco de dados.
+Ex.
+- Cria o objeto do usuario a ser adicionado
+- manda o objeto para o intermediario
+- o intermediario faz a comunicação com o banco de dados
+
+
+CLASSE USUARIO
+Propriedades da classe:
+- id
+- nome
+- email
+
+Metodos da classe:
+- getid
+- setid
+
+- getnome
+- setnome
+
+- getemail
+- setemail
+
+CLASSE USUARIODAO (Utilizará a classe usuario para realizar as tarefas)
+- add(Usuario) 
+
+
+PASSO 1 PARA ADD USUARIO NOVO:
+- Criar a classe do novo usuario.
+
+Criando o usuario:
+$usuario = new Usuario();
+$usuario->setNome('fulano');
+$usuario->setEmail('fulano@hotmail...');
+
+$usuarioDAO->add($usuario);
